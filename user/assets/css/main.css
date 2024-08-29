@@ -1,0 +1,426 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-image: linear-gradient(90deg, #ffffff, #ebf6ff);
+    font-family: Helvetica, Arial, sans-serif;
+            height: 100%;
+  }
+
+
+  /*Style untuk navbar*/
+
+  .navbar {
+    background-image: linear-gradient(30deg , #44a7fd, #0048bd);
+    color: #fff;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    font-size: 15px;
+    padding: 0 5px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
+  }
+  .navbar a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .navbar img {
+    padding-top: 5px;
+  }
+  .navbar-brand {
+    float: left;
+    line-height: inherit;
+    padding-left: 15px;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 2px;
+  }
+  .navbar ul {
+    float: right;
+    list-style: none;
+    height: inherit;
+    line-height: inherit;
+    padding: 0 25px;
+  }
+  .navbar ul li {
+    display: inline-block;
+  }
+  .navbar ul li p {
+    font-size: 18px;
+  }
+  .navbar ul li a {
+    display: block;
+    text-align: center;
+    min-width: 120px;
+    padding: 0 30px;
+  }
+  .navbar ul li a:hover {
+    background-color: rgba(255,255,255,0.15);
+  }
+
+  /*Style untuk isi konten*/
+main {
+  overflow: auto;
+}
+
+  #content {
+    float: right;
+    width: 75%;
+    padding-top: 30px;
+  }
+
+#content h2 {
+    font-size: 50px;
+    color: #296bd4;
+}
+
+#content h1 {
+  color: #296bd4;
+}
+
+#content a {
+  text-decoration: none;
+}
+
+#content a h1 {
+  color: #44a7fd;
+  text-decoration: underline
+}
+
+#content table {
+  font-family: sans-serif;
+  border-collapse: collapse;
+  margin-top: 10px;
+  width: 100%;
+}
+
+#content th {
+  background-color: #44a7fd;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+#content td {
+  color: black;
+  font-size: 14px;
+}
+ 
+#content table, th, td {
+    border: 1px solid rgb(108, 176, 216);
+    padding: 8px 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 30px;
+  margin: 20px 20px;
+} 
+
+/*Style untuk sidebar*/
+
+aside {
+    float: left;
+    color: #fff;
+    width: 20%;
+    padding-left: 20px;
+    padding-top: 40px;
+    height: 100vh;
+    background-image: linear-gradient(30deg , #0048bd, #44a7fd);
+    border-top-right-radius: 80px;
+  }
+  
+  aside a {
+    font-size: 18px;
+    color: #fff;
+    display: block;
+    padding: 12px;
+    padding-left: 30px;
+    text-decoration: none;
+    -webkit-tap-highlight-color:transparent;
+    cursor: pointer;
+  }
+  
+  aside a:hover {
+    color: #3f5efb;
+    background: #ffffff;
+    outline: none;
+    position: relative;
+    background-color: #ffffff;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  
+  aside a:hover::after {
+    content: "";
+    position: absolute;
+    background-color: transparent;
+    bottom: 100%;
+    right: 0;
+    height: 35px;
+    width: 35px;
+    border-bottom-right-radius: 18px;
+    box-shadow: 0 20px 0 0 #ffffff;
+  }
+  
+  aside a:hover::before {
+    content: "";
+    position: absolute;
+    background-color: transparent;
+    top: 38px;
+    right: 0;
+    height: 35px;
+    width: 35px;
+    border-top-right-radius: 18px;
+    box-shadow: 0 -20px 0 0 #ffffff;
+  }
+
+  body {
+    font-family: 'Roboto';
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+
+  /*Style untuk tombol login*/
+  
+  .button {
+    width: 150px;
+    height: 40px;
+    border-radius: 25px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 1.15px;
+    background-color: #44a7fd;
+    color: #f9f9f9;
+    box-shadow: 8px 8px 16px #d1d9e6, -8px -8px 16px #f9f9f9;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .button a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  .button:hover {
+    box-shadow: 6px 6px 10px #d1d9e6, -6px -6px 10px #f9f9f9;
+    transform: scale(0.985);
+    transition: 0.25s;
+  }
+  .button:active, .button:focus {
+    box-shadow: 2px 2px 6px #d1d9e6, -2px -2px 6px #f9f9f9;
+    transform: scale(0.97);
+    transition: 0.25s;
+  }
+
+  /*Style untuk tombol Add*/
+
+  .buttonplus {
+    width: 150px;
+    height: 40px;
+    border-radius: 25px;
+    margin-top: 25px;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 1.15px;
+    background-color: #44a7fd;
+    color: #f9f9f9;
+    box-shadow: 8px 8px 16px #d1d9e6, -8px -8px 16px #f9f9f9;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .buttonplus a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  .buttonplus:hover {
+    box-shadow: 6px 6px 10px #d1d9e6, -6px -6px 10px #f9f9f9;
+    transform: scale(0.985);
+    transition: 0.25s;
+  }
+  .buttonplus:active, .buttonplus:focus {
+    box-shadow: 2px 2px 6px #d1d9e6, -2px -2px 6px #f9f9f9;
+    transform: scale(0.97);
+    transition: 0.25s;
+  }
+
+  /*Style untuk form*/
+
+  .form {
+    padding-top: 20px;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .form__input {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    padding-left: 25px;
+    font-size: 13px;
+    letter-spacing: 0.15px;
+    border: none;
+    outline: none;
+    font-family: "Montserrat", sans-serif;
+    background-color: #ecf0f3;
+    transition: 0.25s ease;
+    border-radius: 8px;
+    box-shadow: inset 2px 2px 4px #d1d9e6, inset -2px -2px 4px #f9f9f9;
+  }
+  .form__input:focus {
+    box-shadow: inset 4px 4px 4px #d1d9e6, inset -4px -4px 4px #f9f9f9;
+  }
+
+  .back {
+    float: right;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    color: #44a7fd;
+  }
+
+  .back:hover {
+    color: #0088ff;
+  }
+
+  .add {
+    float: left;
+  }
+
+  /*Style untuk form search*/
+
+  .forms__input {
+    width: 350px;
+    height: 40px;
+    margin-bottom: 15px;
+    padding-left: 25px;
+    font-size: 13px;
+    letter-spacing: 0.15px;
+    border: none;
+    outline: none;
+    font-family: "Montserrat", sans-serif;
+    background-color: #ecf0f3;
+    transition: 0.25s ease;
+    border-radius: 8px;
+    box-shadow: inset 2px 2px 4px #d1d9e6, inset -2px -2px 4px #f9f9f9;
+  }
+
+  .forms__input:focus {
+    box-shadow: inset 4px 4px 4px #d1d9e6, inset -4px -4px 4px #f9f9f9;
+  }
+
+  .forms__button {
+    width: 100px;
+    height: 40px;
+    border-radius: 8px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 1.15px;
+    background-color: #44a7fd;
+    color: #f9f9f9;
+    box-shadow: 8px 8px 16px #d1d9e6, -8px -8px 16px #f9f9f9;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .edit {
+    color: #3f5efb;
+    font-weight: 700;
+  }
+
+  .edit:hover {
+    color: #002afc;
+    font-weight: 750;
+  }
+
+  .hapus {
+    color: #ff4242;
+    font-weight: 700;
+  }
+
+  .hapus:hover {
+    color: #ff0000;
+    font-weight: 750;
+  }
+
+  .pagination {
+    display: inline-block;
+    margin-top: 15px;
+  }
+
+  .buttonprint {
+    float: right;
+    width: 150px;
+    height: 40px;
+    border-radius: 0px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 1.15px;
+    background-color: #44a7fd;
+    color: #f9f9f9;
+    box-shadow: 8px 8px 16px #d1d9e6, -8px -8px 16px #f9f9f9;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .buttonprint a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  .buttonprint:hover {
+    box-shadow: 6px 6px 10px #d1d9e6, -6px -6px 10px #f9f9f9;
+    transform: scale(0.985);
+    transition: 0.25s;
+  }
+  .buttonprint:active, .buttonprint:focus {
+    box-shadow: 2px 2px 6px #d1d9e6, -2px -2px 6px #f9f9f9;
+    transform: scale(0.97);
+    transition: 0.25s;
+  }
+
+  .pasive {
+    border: 1px solid #44a7fd;
+    background-color: #44a7fd;
+    padding: 5px 10px;
+    color: #ffffff;
+  }
+
+  .pasive:hover {
+    border: 1px solid #44a7fd;
+    background-color: #ffffff;
+    padding: 5px 10px;
+    color: #44a7fd;
+  }
+
+  .active {
+    border: 1px solid #44a7fd;
+    background-color: #ffffff;
+    padding: 5px 10px;
+    color: #44a7fd;
+  }
+
